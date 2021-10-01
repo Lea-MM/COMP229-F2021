@@ -1,6 +1,6 @@
 {
   "name": "comp229-f2021",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -10,12 +10,12 @@
     "npm": "^6.0.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.1",
-    "cookie-parser": "~1.4.4",
-    "dubug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "cookie-parser": "~1.4.5",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.2",
+    "express": "~4.16.4",
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
     "morgan": "~1.9.1",

@@ -5,27 +5,33 @@
     Date: October 1, 2021
 -->
 
-
+<!-- header -->
 <%- include partials/header.ejs %> 
+<!-- navigation -->
 <%- include partials/main_nav.ejs %> 
 
-
+<!-- going to home page when clicked -->
 <% if (title == "Home"){ %>
 <%- include partials/home.ejs %> 
 
+<!-- going to about page when clicked -->
 <% } else if (title == "About") { %>
 <%- include partials/about.ejs %> 
 
+<!-- going to projects page when clicked -->
 <% } else if (title == "Projects") { %>
 <%- include partials/projects.ejs %> 
 
+<!-- going to services page when clicked -->
 <% } else if (title == "Services") { %>
 <%- include partials/services.ejs %> 
 
+<!-- going to contanct page when clicked -->
 <% } else if (title == "Contact") { %>
 <%- include partials/contact.ejs %> 
 <% } %>
 
-
+<!-- copyright -->
 <%- include partials/bottom_nav.ejs %> 
+<!-- scripts -->
 <%- include partials/footer.ejs %> 

@@ -11,6 +11,19 @@
     function Start()
     {
         console.log("App Started...");
+
+        let deleteBtn = document.querySelectorAll('.btn-danger');
+
+        for(button of deleteBtn)
+        {
+            button.addEventListener('click', (event) => {
+                if(!confirm('Are you sure?'))
+                {
+                    event.preventDefault();
+                    window.location.assign('/bussiness-contact');
+                }
+            });
+        }
     }
 
     window.addEventListener("load", Start);

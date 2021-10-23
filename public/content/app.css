@@ -9,7 +9,6 @@
 .jumbotron {
     padding: 4rem 2rem;
     margin-bottom: 2rem;
-    background-color: var(--bs-light);
     border-radius: .3rem;  
 }
 
@@ -18,6 +17,9 @@
     background-color: rgb(231, 224, 201);
 }
 
+body {
+    background-color: rgb(193, 207, 192);
+}
 
 /* Services Page */
 .cnt-services-right {
@@ -81,4 +83,24 @@ div.bg-Body p.text {
 
 form div.pad {
     padding: 0.5em 15em;
+}
+
+
+/* Bussiness Contact Page */
+.pad {
+    padding: 2em 11em;
+    background-color: rgb(193, 207, 192);
+}
+
+thead {
+    color: rgb(17, 50, 77);
+}
+
+.addBtn {
+    padding: 0em  0em 1em 69em;
+}
+
+.addFontStyle {
+    font-weight: bold;
+    color: rgb(17, 50, 77);
 }

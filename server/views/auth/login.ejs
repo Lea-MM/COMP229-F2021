@@ -1,0 +1,50 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<main class="container">
+    <!-- Message Area -->
+    <% if(messages.length > 0) {%>
+        <div class="alert alert-danger">
+            <%= messages %>
+        </div>
+    <% } %>
+
+    <div class="row">
+        <div class="offset-md-4 col-md-4">
+            <h1 class="pt-5 pb-3">Please Login</h1>
+
+            <form class="form" method="post" autocomplete="off">
+
+                <fieldset class="form-group mb-3 row addFontStyle">
+                    <label for="username" class="col-sm-3 col-form-label col-form-label-lg"> Username:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-lg"
+                        name="username" placeholder="Enter username"
+                        id="username" required autofocus>
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-group mb-3 row addFontStyle">
+                    <label for="password" class="col-sm-3 col-form-label col-form-label-lg"> Password:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control form-control-lg"
+                        name="password" placeholder="Enter password"
+                        id="password" required>
+                    </div>
+                    <a href="/register" class="mt-4">Register New Account</a>
+                </fieldset>
+
+                <fieldset class="form-group text-right">
+                    <input type="submit" class="btn btn-success btn-lg pr-5" value="Login">
+                    <a href="/">
+                        <input type="button" class="btn btn-warning btn-lg pr-5" value="Cancel">
+                    </a>
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+</main>
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>

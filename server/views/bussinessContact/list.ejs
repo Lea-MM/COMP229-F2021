@@ -1,0 +1,53 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+  
+
+<!-- Main Content -->
+<main>
+    <div class="pad">
+        <div class="mid">
+            <h1><%= title %></h1> 
+            <div class="addBtn">
+                <a href="/bussiness-contact/add" class="btn btn-primary" role="button">
+                    <i class="fas fa-plus-circle">  Add a Bussiness Contact List</i>
+                </a>
+            </div>    
+            <table class="table table-striped table-hover table-light table-responsive">
+                <!-- Header Row-->
+                <thead>
+                    <tr class="d-flex">
+                        <th class="text-center col-3">Contact Name</th>
+                        <th class="text-center col-3">Contact Number</th>
+                        <th class="text-center col-4">Email</th>
+                        <th class="text-center col-1"></th>
+                        <th class="text-center col-1"></th>
+                    </tr>
+                </thead>
+
+                <!-- Repeatable Template Row -->
+
+                <% for(let count = 0; count < BussinessContactList.length; count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-3"><%= BussinessContactList[count].contactName %></td>
+                        <td class="text-center col-3"><%= BussinessContactList[count].contactNumber %></td>
+                        <td class="text-center col-4"><%= BussinessContactList[count].email %></td>
+                        <td class="text-center col-1">
+                            <a href="/bussiness-contact/edit/<%= BussinessContactList[count].id %>" class="btn btn-primary btn-small">
+                                <i class="fas fa-pencil-alt"> Update</i>
+                            </a>
+                        </td>
+                        <td class="text-center col-1">
+                            <a href="/bussiness-contact/delete/<%= BussinessContactList[count].id %>" class="btn btn-danger btn-small">
+                                <i class="fas fa-trash-alt"> Delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                <% } %>
+            </table>        
+        </div>
+    </div>
+</main>
+  
+
+<%- include ../partials/bottom_nav.ejs %>  
+<%- include ../partials/footer.ejs %>

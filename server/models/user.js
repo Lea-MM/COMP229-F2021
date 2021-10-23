@@ -9,23 +9,23 @@ let User = mongoose.Schema
         {
             type: String,
             default: '',
-            // unique: true,
+            unique: true,
             required: 'Username is required',
             trim: true
         },
-        // password:
-        // {
-        //     type: String,
-        //     validate: 
-        //     [(password) => {return password && password.length > 6;}, 'Password should be longer'],
-        //     required: 'Password is required',
-        //     trim: true
-        // },
+        password:
+        {
+            type: String,
+            validate: 
+            [(password) => {return password && password.length > 6;}, 'Password should be longer'],
+            required: 'Password is required',
+            trim: true
+        },
         email:
         {
             type: String,
             default: '',
-            // match: [/.+\@.+\..+/, "Please fill a valid e-mail address"],
+            match: [/.+\@.+\..+/, "Please fill a valid e-mail address"],
             required: 'Email address is required',
             trim: true
         },
@@ -33,7 +33,7 @@ let User = mongoose.Schema
         {
             type: String,
             default: '',
-            // unique: true,
+            unique: true,
             required: 'Display name is required',
             trim: true
         },

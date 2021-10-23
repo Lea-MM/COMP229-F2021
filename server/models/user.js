@@ -1,3 +1,11 @@
+/*
+File Name: app.css
+Student Name: Lea Marie Magbalot
+Student ID: 301145757
+Date: October 23, 2021
+*/
+
+
 // require modules for the User Model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');

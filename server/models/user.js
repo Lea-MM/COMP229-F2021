@@ -21,14 +21,14 @@ let User = mongoose.Schema
             required: 'Username is required',
             trim: true
         },
-        password:
-        {
-            type: String,
-            validate: 
-            [(password) => {return password && password.length > 6;}, 'Password should be longer'],
-            required: 'Password is required',
-            trim: true
-        },
+        // password:
+        // {
+        //     type: String,
+        //     validate: 
+        //     [(password) => {return password && password.length > 6;}, 'Password should be longer'],
+        //     required: 'Password is required',
+        //     trim: true
+        // },
         email:
         {
             type: String,
